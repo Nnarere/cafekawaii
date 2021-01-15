@@ -40,3 +40,21 @@ body {
 .card {
   display: flex;
   flex-wrap: wrap; }
+
+footer {
+  background-color: #e7e7e7;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.telefono {
+  width: 10px; }
+
+.instagram {
+  width: 10px; }
+
+.correoElectronico {
+  width: 12px; }
+
+.logo--footer {
+  text-align: end; }
