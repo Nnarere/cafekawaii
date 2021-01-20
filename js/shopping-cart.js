@@ -68,7 +68,7 @@ myShoppingCart.addProduct(cafeteria[1]);
 
 myShoppingCart.removeProduct(cafeteria[2]);
 
-localStorage.setItem("selectedProduct", addProduct)
+localStorage.setItem("selectedProduct", myShoppingCart)
 
 myShoppingCart.getCartProductNames();
 console.log();
