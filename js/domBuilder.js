@@ -12,7 +12,7 @@ function buildProductCard(){
                         <a href="#" class="btn btn-primary">Agregar al pedido</a>
                     </div>
                 </div>
-            </div>`
+            </div>`;
 
             return htmlCard;
 }

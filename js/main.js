@@ -1,6 +1,6 @@
-const productContainerPasteleria = new productContainerPasteleria();
-const productContainerPanaderia = new productContainerPanaderia();
-const roductContainerCafeteria = new roductContainerCafeteria();
+const ContainerPasteleria = new productContainerPasteleria();
+const ContainerPanaderia = new productContainerPanaderia();
+const ContainerCafeteria = new roductContainerCafeteria();
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     pasteleria.forEach(function(product){
         if(product.avaliable){
             const cardPasteleria = buildProductCard(pasteleria);
-            productContainerPasteleria.innerHTML += card;
+            productContainerPasteleria.innerHTML += htmlcard;
         }
   });
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     panaderia.forEach(function(product){
         if(product.avaliable){
         const cardPanaderia = buildProductCard(panaderia);
-            productContainerPanaderia.innerHTML += card;
+            productContainerPanaderia.innerHTML += htmlcard;
         }
   });
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   cafeteria.forEach(function(product){
     if(product.avaliable){
       const cardCafeteria = buildProductCard(pasteleria);
-      productContainerCafeteria.innerHTML += card;
+      productContainerCafeteria.innerHTML += htmlcard;
     }
 });
 
