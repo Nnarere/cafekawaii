@@ -1,6 +1,6 @@
 const ContainerPasteleria = new productContainerPasteleria();
 const ContainerPanaderia = new productContainerPanaderia();
-const ContainerCafeteria = new roductContainerCafeteria();
+const ContainerCafeteria = new productContainerCafeteria();
 
 document.addEventListener("DOMContentLoaded", function(event) {
 

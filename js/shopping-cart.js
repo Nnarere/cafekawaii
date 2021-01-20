@@ -68,6 +68,8 @@ myShoppingCart.addProduct(cafeteria[1]);
 
 myShoppingCart.removeProduct(cafeteria[2]);
 
+localStorage.setItem("selectedProduct", addProduct)
+
 myShoppingCart.getCartProductNames();
 console.log();
 myShoppingCart.getCartUnitaryPrice();
