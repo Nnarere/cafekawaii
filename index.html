@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <script src="js/javascript.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/domBuilder.js"></script>
+    <script defer src="js/productos-cafeteria.js"></script>
+    <script defer src="js/productos-panaderia.js"></script>
+    <script defer src="js/productos-pasteleria.js"></script>
+    <script defer src="js/shopping-cart.js"></script>
     <title>Café Kawaii Delivery</title>    
 </head>
 <body>
@@ -47,82 +52,9 @@
         </div>
 
         <!--CARD LINEA 1-->
-        <div class="row pasteleria__row--lineaUno">
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/cheesecake-japones.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cheesecake Japones</h5>
-                        <p class="card-text">Mezcla de Souffle tradicional con Cheesecake</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARD 2-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/mousse.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Osito Flan</h5>
-                        <p class="card-text">Delicioso flan sabor chocolate, relleno de salsa de chocolate</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARD 3-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/roll-matcha.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Roll Matcha</h5>
-                        <p class="card-text">Exquisito bizcocho de matcha relleno de queso mascarpone</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--CARD LINEA 2-->
-        <div class="row palereria__row">
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/taiyaki.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Taiyaki</h5>
-                        <p class="card-text">Deliciosa masa dulce rellena de salsa de chocolate</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARD 2-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/totoro-cake.JPG" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Totoro Cake</h5>
-                        <p class="card-text">Rico bizcocho marmolado, relleno de manjar.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARD 3-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/mochi.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mochi</h5>
-                        <p class="card-text"> 6 unidades de mochi de frambuesa y matcha</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
+        <div class="row pasteleria__row">
         </div>
     </div>
-
     <!--PANADERIA-->
     <div class="container pedido">
         <div class="row">
@@ -132,44 +64,10 @@
         </div>
 
         <!--CARD LINEA 1-->
-        <div class="row pasteleria__row">
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/gatito.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Gatito Pan</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-            <!--CARD 2-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/melopan.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Melon Pan</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARD 3-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/kurimopan.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Kurimo Pan</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>           
+        <div class="row panaderia__row">
         </div>
     </div>
-
-
+            
     <!--BEBESTIBLES-->
     <div class="container pedido">
         <div class="row">
@@ -179,79 +77,9 @@
         </div>
 
         <!--CARD LINEA 1-->
-        <div class="row pasteleria__row--lineaUno">
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/cafeGrano.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cafe a Grano</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-             </div>
-            <!--CARD 2-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/cafeHelado.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cafe Helado</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARD 3-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/dalgonacoffee.jfif" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Dalgona Café</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--CARD LINEA 2-->
-        <div class="row palereria__row">
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/smoothieFresa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Smoothie de Fresa</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-            <!--CARD 2-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/te.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Te (variedades)</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARD 3-->
-            <div class="col-lg-4 pasteleria__card">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/teMatchaTapioca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Te Matcha Tapioca</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="row cafeteria__row">
+            
+        </div>  
     </div>
 
     <!--FOOTER-->

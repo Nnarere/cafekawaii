@@ -1,10 +1,24 @@
-class Productos{
+document.addEventListener("DOMContentLoaded", function(event) {
 
-    constructor(id, name, description, price) {
-        this.id = id;
-        this.name = name;
-        this.description= description;
-        this.price = price;
-    }
-}
-var tartaDeFresas = new constructor(1, "tarta de fresas", "rica tarta", 3000);
+    const productContainerPasteleria = document.getElementsByClassName("pasteleria__row")
+
+    pasteleria.forEach(function(product){
+        const cardPasteleria = buildProductCard(pasteleria);
+        productContainerPasteleria.innerHTML += card;
+  });
+
+  const productContainerPanaderia = document.getElementsByClassName("panaderia__row")
+
+    panaderia.forEach(function(product){
+        const cardPanaderia = buildProductCard(panaderia);
+            productContainerPanaderia.innerHTML += card;
+  });
+
+  const productContainerCafeteria = document.getElementsByClassName("cafeteria__row")
+
+  cafeteria.forEach(function(product){
+      const cardCafeteria = buildProductCard(pasteleria);
+      productContainerCafeteria.innerHTML += card;
+});
+
+})
