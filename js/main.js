@@ -1,4 +1,6 @@
-const domBuilder = new buildProductCard()
+const productContainerPasteleria = new productContainerPasteleria();
+const productContainerPanaderia = new productContainerPanaderia();
+const roductContainerCafeteria = new roductContainerCafeteria();
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
