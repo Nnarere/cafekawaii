@@ -68,8 +68,6 @@ myShoppingCart.addProduct(cafeteria[1]);
 
 myShoppingCart.removeProduct(cafeteria[2]);
 
-localStorage.setItem("selectedProduct", myShoppingCart)
-
 myShoppingCart.getCartProductNames();
 console.log();
 myShoppingCart.getCartUnitaryPrice();
@@ -77,3 +75,6 @@ console.log();
 myShoppingCart.getById(panaderia[0]);
 myShoppingCart.getTotal();
 
+localStorage.setItem("selectedProduct", JSON.stringify(myShoppingCart));
+const cart = localStorage.getItem("selectedProduct")
+console.log(JSON.parse(cart));

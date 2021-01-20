@@ -1,34 +1,30 @@
-const ContainerPasteleria = new productContainerPasteleria();
-const ContainerPanaderia = new productContainerPanaderia();
-const ContainerCafeteria = new productContainerCafeteria();
+document.addEventListener("DOMContentLoaded", function() {
 
-document.addEventListener("DOMContentLoaded", function(event) {
+    const productContainerPasteleria = document.getElementById("pasteleria__row")
 
-    const productContainerPasteleria = document.getElementsByClassName("pasteleria__row")
-
-    pasteleria.forEach(function(product){
+        pasteleria.forEach(function(product){
         if(product.avaliable){
-            const cardPasteleria = buildProductCard(pasteleria);
-            productContainerPasteleria.innerHTML += htmlcard;
-        }
-  });
+                const cardPasteleria = buildProductCard(product);
+                productContainerPasteleria.innerHTML += cardPasteleria;
+            }
+    });
 
-  const productContainerPanaderia = document.getElementsByClassName("panaderia__row")
+    const productContainerPanaderia = document.getElementById("panaderia__row")
 
-    panaderia.forEach(function(product){
+        panaderia.forEach(function(product){
         if(product.avaliable){
-        const cardPanaderia = buildProductCard(panaderia);
-            productContainerPanaderia.innerHTML += htmlcard;
-        }
-  });
+            const cardPanaderia = buildProductCard(product);
+                productContainerPanaderia.innerHTML += cardPanaderia;
+            }
+    });
 
-  const productContainerCafeteria = document.getElementsByClassName("cafeteria__row")
+    const productContainerCafeteria = document.getElementById("cafeteria__row")
 
-  cafeteria.forEach(function(product){
-    if(product.avaliable){
-      const cardCafeteria = buildProductCard(pasteleria);
-      productContainerCafeteria.innerHTML += htmlcard;
-    }
-});
+        cafeteria.forEach(function(product){
+        if(product.avaliable){
+            const cardCafeteria = buildProductCard(product);
+            productContainerCafeteria.innerHTML += cardCafeteria;
+            }
+        });
 
 })
