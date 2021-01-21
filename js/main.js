@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    //LLAMO A LOS PRODUCTOS Y LOS INCORPORO EN EL HTML
+
     const productContainerPasteleria = document.getElementById("pasteleria__row")
 
         pasteleria.forEach(function(product){

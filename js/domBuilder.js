@@ -1,4 +1,4 @@
-//DOM BUILDER PRODUCTS
+//CONSTRUYO EL MOLDE DEL HTML
 
 function buildProductCard(product){
     const htmlCard=
@@ -9,7 +9,7 @@ function buildProductCard(product){
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.description}</p>
                         <p class="card-text">${product.price}</p>
-                        <a href="#" class="btn btn-primary">Agregar al pedido</a>
+                        <button onclick="btnFunction()" class="btn btn-primary" id="boton">Agregar al pedido</button>
                     </div>
                 </div>
             </div>`;

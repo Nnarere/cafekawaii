@@ -75,6 +75,11 @@ console.log();
 myShoppingCart.getById(panaderia[0]);
 myShoppingCart.getTotal();
 
-localStorage.setItem("selectedProduct", JSON.stringify(myShoppingCart));
-const cart = localStorage.getItem("selectedProduct")
-console.log(JSON.parse(cart));
+//FUNCION DEL BOTON PERO NO FUNCIONA
+function btnFunction(){
+    document.getElementById("boton");
+
+    localStorage.setItem("selectedProduct", JSON.stringify(myShoppingCart));
+    const cart = localStorage.getItem("selectedProduct");
+    console.log(JSON.parse(cart));
+}
