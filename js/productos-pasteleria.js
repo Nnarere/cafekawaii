@@ -38,9 +38,8 @@ const pasteleria = [{
     "image":"images/totoro-cake.JPG",
     "amount":0,
     "avaliable":true
-}
-,{
-    "id": "005",
+},{
+    "id": "006",
     "name": "Mochi",
     "description": "6 unidades de mochi de frambuesa y matcha.",
     "price": 6000,

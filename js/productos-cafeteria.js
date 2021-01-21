@@ -41,7 +41,7 @@ const cafeteria = [
     "avaliable":true
 }
 ,{
-    "id": "caf005",
+    "id": "caf006",
     "name": "Te Matcha Tapioca",
     "description": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "price": 6000,

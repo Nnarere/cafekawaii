@@ -5,16 +5,17 @@ function shoppingCart() {
     var discount = 0;
 
     this.addProduct = function(productToPush) {
-        cart.push(productToPush)
-        localStorage.setItem("productAdded","productName")
-        //acá setear el setItem del localStorage
-    }
+      cart.push(productToPush)
+      localStorage.setItem("productAdded", JSON.stringify(cart));
+      const carto = localStorage.getItem("selectedProduct");
+      console.log(JSON.parse(carto))
+      //console.log(cart)
+  }
 
     this.removeProduct = function(productToSplice) {
         var removeIndex = cart.findIndex(product => product.id === productToSplice.id);
         cart.splice(removeIndex, 1)
         localStorage.setItem("productRemoved", "productNameRemoved")
-        //acá setear el setItem del localStorage
     }
 
     this.getById = function(productToFind) {
@@ -47,13 +48,6 @@ function shoppingCart() {
     }
 }
 
-function productConstructor(id, name, description, price, image) {
-    this.id = id;
-    this.name = name;
-    this.description= description;
-    this.price = price;
-    this.image = image;
-}
 ///////////////////////////////////////////////
 
 
@@ -61,12 +55,12 @@ function productConstructor(id, name, description, price, image) {
 var myShoppingCart = new shoppingCart()
 
 /// AGREGO PRODUCTOS / SACO 1 / BUSCO SI HAY DESCUENTO / MUESTRO EL CARRITO ///
-myShoppingCart.addProduct(cafeteria[2]);
+/*myShoppingCart.addProduct(cafeteria[2]);
 myShoppingCart.addProduct(pasteleria[5]);
 myShoppingCart.addProduct(panaderia[0]);
 myShoppingCart.addProduct(cafeteria[1]);
 
-myShoppingCart.removeProduct(cafeteria[2]);
+myShoppingCart.removeProduct(cafeteria[2]);*/
 
 myShoppingCart.getCartProductNames();
 console.log();
@@ -75,11 +69,26 @@ console.log();
 myShoppingCart.getById(panaderia[0]);
 myShoppingCart.getTotal();
 
-//FUNCION DEL BOTON PERO NO FUNCIONA
-function btnFunction(){
-    document.getElementById("boton");
 
-    localStorage.setItem("selectedProduct", JSON.stringify(myShoppingCart));
-    const cart = localStorage.getItem("selectedProduct");
-    console.log(JSON.parse(cart));
-}
+//FUNCION DEL BOTON
+function btnFunction(event){
+
+    cafeteria.forEach((product) => {
+      if(product.id === event.target.dataset.id) {
+        myShoppingCart.addProduct(product);
+        console.log(product.name, product.price);
+      }
+    });
+    panaderia.forEach((product) => {
+      if(product.id === event.target.dataset.id) {
+        myShoppingCart.addProduct(product);
+        console.log(product.name, product.price);
+      }
+    });
+    pasteleria.forEach((product) => {
+      if(product.id === event.target.dataset.id) {
+        myShoppingCart.addProduct(product);
+        console.log(product.name, product.price);
+      }
+    });
+  }
