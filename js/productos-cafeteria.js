@@ -36,7 +36,7 @@ const cafeteria = [
     "name": "Te Variedades",
     "description": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "price": 5000,
-    "image":"images/te.jp",
+    "image":"images/te.jpg",
     "amount":0,
     "avaliable":true
 }
