@@ -8,7 +8,7 @@ function buildProductCard(product){
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.description}</p>
-                        <p class="card-text">${product.price}</p>
+                        <p class="card-text">$ ${product.price} CLP</p>
                         <button onclick="btnFunction(event)" class="btn btn-primary" id="boton" data-name="${product.name}" data-id="${product.id}">Agregar al pedido</button>
                     </div>
                 </div>

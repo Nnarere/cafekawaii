@@ -40,6 +40,7 @@ function shoppingCart() {
     }
 
     this.getTotal = function() {
+        let total=0;
         cart.forEach(function(product) {
             total += product.price
         })
@@ -48,27 +49,8 @@ function shoppingCart() {
     }
 }
 
-///////////////////////////////////////////////
 
-
-/// NUEVAS INSTANCIAS DE CARRITO Y PRODUCTOS ///
 var myShoppingCart = new shoppingCart()
-
-/// AGREGO PRODUCTOS / SACO 1 / BUSCO SI HAY DESCUENTO / MUESTRO EL CARRITO ///
-/*myShoppingCart.addProduct(cafeteria[2]);
-myShoppingCart.addProduct(pasteleria[5]);
-myShoppingCart.addProduct(panaderia[0]);
-myShoppingCart.addProduct(cafeteria[1]);
-
-myShoppingCart.removeProduct(cafeteria[2]);*/
-
-myShoppingCart.getCartProductNames();
-console.log();
-myShoppingCart.getCartUnitaryPrice();
-console.log();
-myShoppingCart.getById(panaderia[0]);
-myShoppingCart.getTotal();
-
 
 //FUNCION DEL BOTON
 function btnFunction(event){
@@ -91,4 +73,6 @@ function btnFunction(event){
         console.log(product.name, product.price);
       }
     });
+
+    console.log(myShoppingCart.getTotal())
   }

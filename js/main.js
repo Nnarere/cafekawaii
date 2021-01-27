@@ -28,5 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
             productContainerCafeteria.innerHTML += cardCafeteria;
             }
         });
+        localStorage.getItem("total", myShoppingCart)
 
 })
