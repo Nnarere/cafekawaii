@@ -16,6 +16,3 @@ function buildProductCard(product){
 
             return htmlCard;
 };
-
-
-var css = $(".card").css("margin-bottom", "40px");
