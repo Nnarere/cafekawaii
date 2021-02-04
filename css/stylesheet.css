@@ -13,8 +13,6 @@ body {
 
 .titulo {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
   font-family: "Kosugi Maru", sans-serif;
   font-size: 100px; }
 
@@ -22,8 +20,7 @@ body {
   font-family: "Kosugi Maru", sans-serif;
   text-align: center;
   background-color: #fff6fb;
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-top: 20px; }
 
 .palereria__row {
   display: flex;
@@ -31,15 +28,12 @@ body {
   justify-content: space-between !important; }
 
 .pasteleria__card {
-  display: flex;
-  justify-content: center !important; }
-
-.pasteleria__row--lineaUno {
-  margin-bottom: 40px; }
+  display: flex; }
 
 .card {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 20px; }
 
 footer {
   background-color: #e7e7e7;

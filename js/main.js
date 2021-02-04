@@ -30,4 +30,6 @@ $ ( document ).ready(function(){
         });
         localStorage.getItem("total", myShoppingCart)
 });
-$(".pasteleria__card").css("margin-bottom", "40px");
+$(".subtitulo").hover( function() {
+    $(this).css("color", "#45005F")
+})

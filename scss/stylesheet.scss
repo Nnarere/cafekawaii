@@ -15,8 +15,6 @@ body{
 
 .titulo{
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
     font-family: $letraTitulo;
     font-size: 100px;
 }
@@ -25,8 +23,7 @@ body{
     font-family: $letraTitulo;
     text-align: center;
     background-color: rgb(255, 246, 251);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .palereria__row{
@@ -37,15 +34,12 @@ body{
 
 .pasteleria__card{
     display: flex;
-    justify-content: center!important;
-}
-.pasteleria__row--lineaUno{
-    margin-bottom: 40px;
 }
 
 .card{
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 footer{
@@ -69,3 +63,4 @@ footer{
 .logo--footer{
     text-align: end;
 }
+
