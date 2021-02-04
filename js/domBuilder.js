@@ -15,4 +15,7 @@ function buildProductCard(product){
             </div>`;
 
             return htmlCard;
-}
+};
+
+
+var css = $(".card").css("margin-bottom", "40px");

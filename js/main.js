@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+$ ( document ).ready(function(){
 
     //LLAMO A LOS PRODUCTOS Y LOS INCORPORO EN EL HTML
 
@@ -29,5 +29,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         localStorage.getItem("total", myShoppingCart)
-
 })
