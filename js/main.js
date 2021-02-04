@@ -2,7 +2,7 @@ $ ( document ).ready(function(){
 
     //LLAMO A LOS PRODUCTOS Y LOS INCORPORO EN EL HTML
 
-    const productContainerPasteleria = document.getElementById("pasteleria__row")
+    const productContainerPasteleria = $("#pasteleria__row")[0] //document.getElementById("pasteleria__row")
 
         pasteleria.forEach(function(product){
         if(product.avaliable){
@@ -11,7 +11,7 @@ $ ( document ).ready(function(){
             }
     });
 
-    const productContainerPanaderia = document.getElementById("panaderia__row")
+    const productContainerPanaderia = $("#panaderia__row")[0]
 
         panaderia.forEach(function(product){
         if(product.avaliable){
@@ -20,7 +20,7 @@ $ ( document ).ready(function(){
             }
     });
 
-    const productContainerCafeteria = document.getElementById("cafeteria__row")
+    const productContainerCafeteria = $("#cafeteria__row")[0]
 
         cafeteria.forEach(function(product){
         if(product.avaliable){

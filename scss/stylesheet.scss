@@ -4,13 +4,35 @@ body{
     background-color: (rgb(255, 221, 240))!important;
 }
 
-.navbar{
-    justify-content: center;
+.navbar-nav{
+    justify-content: flex-start;
     font-family: $letraTituloComida;
-    z-index: 1;
+    z-index: 9999;
     top: 0;
     position: sticky!important;
     opacity: 0.9;
+    overflow: hidden;
+}
+
+.navbar-brand{
+    width: 50px;
+    overflow: hidden;
+    display: flex;
+}
+
+.logo{
+    width: 45px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.foto--carrito{
+    width: 25px;
+}
+
+.carrito{
+    display: flex;
+    margin: 5px;
 }
 
 .titulo{
@@ -62,5 +84,9 @@ footer{
 
 .logo--footer{
     text-align: end;
+
+}
+.logo--footer__img{
+    width: 90px;
 }
 
