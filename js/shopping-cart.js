@@ -4,12 +4,15 @@ function shoppingCart() {
     var total = 0;
     var discount = 0;
 
+    //arreglar linea 14
+
     this.addProduct = function(productToPush) {
-      cart.push(productToPush)
+      if (cart.push(productToPush)){
       localStorage.setItem("productAdded", JSON.stringify(cart));
       const carto = localStorage.getItem("selectedProduct");
-      console.log(JSON.parse(carto))
-      //console.log(cart)
+      console.log(JSON.parse(carto))}
+      else if (carto > product.stock) { alert("Producto agregado al carrito")}
+            else {alert("no hay stock")}
   }
 
     this.removeProduct = function(productToSplice) {
@@ -48,7 +51,6 @@ function shoppingCart() {
         console.log(`El total es ${total}`);
     }
 }
-
 
 var myShoppingCart = new shoppingCart()
 

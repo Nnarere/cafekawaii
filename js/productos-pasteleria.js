@@ -5,7 +5,8 @@ const pasteleria = [{
     "price": 8000,
     "image":"images/cheesecake-japones.jpg",
     "amount":0,
-    "avaliable":true
+    "avaliable":true,
+    "stock": 5,
 },{
     "id": "002",
     "name": "Osito Flan",
@@ -13,7 +14,8 @@ const pasteleria = [{
     "price": 5000,
     "image":"images/mousse.jpg",
     "amount":0,
-    "avaliable":true
+    "avaliable":true,
+    "stock": 5,
 },{
     "id": "003",
     "name": "Roll Matcha",
@@ -21,7 +23,8 @@ const pasteleria = [{
     "price": 4000,
     "image":"images/roll-matcha.jpg",
     "amount":0,
-    "avaliable":true
+    "avaliable":true,
+    "stock": 5,
 },{
     "id": "004",
     "name": "Taiyaki",
@@ -29,7 +32,8 @@ const pasteleria = [{
     "price": 4000,
     "image":"images/taiyaki.jpg",
     "amount":0,
-    "avaliable":true
+    "avaliable":true,
+    "stock": 5,
 },{
     "id": "005",
     "name": "Totoro Cake",
@@ -37,7 +41,8 @@ const pasteleria = [{
     "price": 5000,
     "image":"images/totoro-cake.JPG",
     "amount":0,
-    "avaliable":true
+    "avaliable":true,
+    "stock": 5,
 },{
     "id": "006",
     "name": "Mochi",
@@ -45,6 +50,7 @@ const pasteleria = [{
     "price": 6000,
     "image":"images/mochi.jpg",
     "amount":0,
-    "avaliable":true
+    "avaliable":true,
+    "stock": 5,
 }
 ]
