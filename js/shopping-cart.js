@@ -8,12 +8,12 @@ function shoppingCart() {
 
     this.addProduct = function(productToPush) {
       if (cart.push(productToPush)){
+      alert("Producto agregado al carrito")
       localStorage.setItem("productAdded", JSON.stringify(cart));
-      const carto = localStorage.getItem("selectedProduct");
-      console.log(JSON.parse(carto))}
-      else if (carto > product.stock) { alert("Producto agregado al carrito")}
-            else {alert("no hay stock")}
-  }
+      const carto = localStorage.getItem("productAdded");
+      console.log(JSON.parse(carto))
+      }
+      }
 
     this.removeProduct = function(productToSplice) {
         var removeIndex = cart.findIndex(product => product.id === productToSplice.id);
