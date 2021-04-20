@@ -9,7 +9,9 @@ function buildProductCard(product){
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.description}</p>
                         <p class="card-text">$ ${product.price} CLP</p>
-                        <button onclick="btnFunction(event)" class="btn btn-primary" id="boton" data-name="${product.name}" data-id="${product.id}">Agregar al pedido</button>
+                        <p class="card-text">Stock: ${product.stock}</p>
+                        <input type="number" class="form-control" id="cantidad" placeholder="0">
+                        <button onclick="btnFunction(event)" class="btn btn-primary" id="boton" data-name="${product.name}" data-id="${product.id}">Agregar al carrito</button>
                     </div>
                 </div>
             </div>`;

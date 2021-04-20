@@ -4,16 +4,34 @@ function shoppingCart() {
     var total = 0;
     var discount = 0;
 
-    //arreglar linea 14
+    this.addProduct = function(productToPush){
+      if (productToPush.stock > 0){
+          cart.push(productToPush)
+          productToPush.stock = productToPush.stock-1
+          alert("Producto agregado al carrito")
+          localStorage.setItem("productAdded", JSON.stringify(cart));
+          const carto = localStorage.getItem("productAdded");
+          console.log(JSON.parse(carto))
+          }
+        else {alert("No hay stock")}
+      }
 
-    this.addProduct = function(productToPush) {
-      if (cart.push(productToPush)){
-      alert("Producto agregado al carrito")
-      localStorage.setItem("productAdded", JSON.stringify(cart));
-      const carto = localStorage.getItem("productAdded");
-      console.log(JSON.parse(carto))
+    //jugar con esto:
+    this.updateStock = function(stockToUpdate){
+      if (addProduct == true){
+      cafeteria.forEach(function(product){
+        cafeteria.stock -= 1
+      })
+      panaderia.forEach(function(product){
+        panaderia.stock -= 1
+      })
+      pasteleria.forEach(function(product){
+        pasteleria.stock -= 1
+      })
       }
-      }
+    }
+      
+        
 
     this.removeProduct = function(productToSplice) {
         var removeIndex = cart.findIndex(product => product.id === productToSplice.id);

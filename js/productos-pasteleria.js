@@ -6,7 +6,7 @@ const pasteleria = [{
     "image":"images/cheesecake-japones.jpg",
     "amount":0,
     "avaliable":true,
-    "stock": 5,
+    "stock": 1,
 },{
     "id": "002",
     "name": "Osito Flan",
