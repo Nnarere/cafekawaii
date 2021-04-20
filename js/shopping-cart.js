@@ -14,24 +14,7 @@ function shoppingCart() {
           console.log(JSON.parse(carto))
           }
         else {alert("No hay stock")}
-      }
-
-    //jugar con esto:
-    this.updateStock = function(stockToUpdate){
-      if (addProduct == true){
-      cafeteria.forEach(function(product){
-        cafeteria.stock -= 1
-      })
-      panaderia.forEach(function(product){
-        panaderia.stock -= 1
-      })
-      pasteleria.forEach(function(product){
-        pasteleria.stock -= 1
-      })
-      }
-    }
-      
-        
+      }      
 
     this.removeProduct = function(productToSplice) {
         var removeIndex = cart.findIndex(product => product.id === productToSplice.id);
