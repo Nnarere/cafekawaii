@@ -1,4 +1,4 @@
-//CONSTRUYO EL MOLDE DEL HTML
+//CONSTRUYO EL MOLDE DE LAS CARDS HTML
 
 function buildProductCard(product){
     const htmlCard =
@@ -18,3 +18,61 @@ function buildProductCard(product){
 
             return htmlCard;
 };
+
+//CONSTRUIR HTML CARRITO DE COMPRAS (IMAGEN SUPERIOR DERECHA)
+
+function buildCarrito(product){
+    const htmlCarrito =
+        `<li><a class="dropdown-item"> ${product.name} = ${product.price}</a></li>`;
+    return htmlCarrito;
+};
+
+//LLAMO A LOS PRODUCTOS Y LOS INCORPORO EN EL HTML
+
+$ ( document ).ready(function(){
+
+    const productContainerPasteleria = $("#pasteleria__row")[0] //document.getElementById("pasteleria__row")
+
+        pasteleria.forEach(function(product){
+        if(product.avaliable){
+                productContainerPasteleria.innerHTML += buildProductCard(product);
+            }
+    });
+
+    const productContainerPanaderia = $("#panaderia__row")[0]
+
+        panaderia.forEach(function(product){
+        if(product.avaliable){
+            productContainerPanaderia.innerHTML += buildProductCard(product)
+            }
+    });
+
+    const productContainerCafeteria = $("#cafeteria__row")[0]
+
+        cafeteria.forEach(function(product){
+        if(product.avaliable){
+            productContainerCafeteria.innerHTML += buildProductCard(product)
+            }
+        });
+
+
+    localStorage.getItem("total", myShoppingCart);
+
+//CARRITO DE COMPRAS QUE NO FUNCIONA
+/*lo que yo interpreto es que, busca en mi carrito de compras (que se ve por consola) y por cada uno de ellos
+crea el HTML como si fuera lista del navbar, la verdad es que no se cómo hacer que se vea en el boton el carrito 
+(un cuadro con lo comprado)*/
+
+    const productCarrito = $("#carritoCompras")[0]
+        myShoppingCart.forEach(function(product){
+        if(product){
+            productCarrito.innerHTML += buildCarrito(product)
+        }
+        });
+
+    
+});
+
+
+
+

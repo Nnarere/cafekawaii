@@ -9,12 +9,10 @@ body {
   z-index: 9999;
   top: 0;
   position: sticky !important;
-  opacity: 0.9;
-  overflow: hidden; }
+  opacity: 0.9; }
 
 .navbar-brand {
   width: 50px;
-  overflow: hidden;
   display: flex; }
 
 .logo {

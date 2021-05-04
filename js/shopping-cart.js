@@ -8,10 +8,9 @@ function shoppingCart() {
       if (productToPush.stock > 0){
           cart.push(productToPush)
           productToPush.stock = productToPush.stock-1
-          alert("Producto agregado al carrito")
           localStorage.setItem("productAdded", JSON.stringify(cart));
           const carto = localStorage.getItem("productAdded");
-          console.log(JSON.parse(carto))
+          //console.log(JSON.parse(carto))
           }
         else {alert("No hay stock")}
       }      
@@ -78,4 +77,5 @@ function btnFunction(event){
     });
 
     console.log(myShoppingCart.getTotal())
+    
   }
