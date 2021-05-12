@@ -5,8 +5,7 @@ const panaderia= [{
     "price": 4000,
     "image":"images/gatito.jpg",
     "amount":0,
-    "avaliable":true,
-    "stock": 5,
+    "avaliable":true
 },{
     "id": "pan002",
     "name": "Melon Pan",
@@ -14,8 +13,7 @@ const panaderia= [{
     "price": 4000,
     "image":"images/melopan.jfif",
     "amount":0,
-    "avaliable":true,
-    "stock": 5,
+    "avaliable":true
 },{
     "id": "pan003",
     "name": "Kurimo Pan",
@@ -23,6 +21,5 @@ const panaderia= [{
     "price": 4000,
     "image":"images/kurimopan.jpg",
     "amount":0,
-    "avaliable":true,
-    "stock": 5,
+    "avaliable":true
 }]

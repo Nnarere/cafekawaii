@@ -6,8 +6,7 @@ const cafeteria = [
     "price": 2000,
     "image":"images/cafeGrano.jpeg",
     "amount":0,
-    "avaliable":true,
-    "stock": 10
+    "avaliable":true
 },{
     "id": "caf002",
     "name": "Cafe Helado",
@@ -15,8 +14,7 @@ const cafeteria = [
     "price": 4000,
     "image":"images/cafeHelado.jpg",
     "amount":0,
-    "avaliable":true,
-    "stock": 10,
+    "avaliable":true
 },{
     "id": "caf003",
     "name": "Dalgona Café",
@@ -24,8 +22,7 @@ const cafeteria = [
     "price": 3000,
     "image":"images/dalgonacoffee.jfif",
     "amount":0,
-    "avaliable":true,
-    "stock": 10
+    "avaliable":true
 },{
     "id": "caf004",
     "name": "Smoothie de Fresa",
@@ -33,8 +30,7 @@ const cafeteria = [
     "price": 3000,
     "image":"images/smoothieFresa.jpg",
     "amount":0,
-    "avaliable":true,
-    "stock": 10
+    "avaliable":true
 },{
     "id": "caf005",
     "name": "Te Variedades",
@@ -42,8 +38,7 @@ const cafeteria = [
     "price": 2000,
     "image":"images/te.jpg",
     "amount":0,
-    "avaliable":true,
-    "stock": 10
+    "avaliable":true
 }
 ,{
     "id": "caf006",
@@ -52,6 +47,5 @@ const cafeteria = [
     "price": 5000,
     "image":"images/teMatchaTapioca.jpg",
     "amount":0,
-    "avaliable":true,
-    "stock": 10
+    "avaliable":true
 }]

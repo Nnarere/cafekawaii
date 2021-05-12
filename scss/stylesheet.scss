@@ -7,31 +7,23 @@ body{
 .navbar-nav{
     justify-content: flex-start;
     font-family: $letraTituloComida;
-    z-index: 9999;
-    top: 0;
-    position: sticky!important;
     opacity: 0.9;
+    width: 95%;
+    transition: top 0.5s;
 }
 
 .navbar-brand{
-    width: 50px;
-
+    width: 45px;
     display: flex;
 }
 
 .logo{
     width: 45px;
-    overflow: hidden;
     margin: 5px;
 }
 
-.foto--carrito{
-    width: 25px;
-}
-
-.carrito{
-    display: flex;
-    margin: 5px;
+.botonDelCarrito{
+    margin-right: 10px;
 }
 
 .titulo{

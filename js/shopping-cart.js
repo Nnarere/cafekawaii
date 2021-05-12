@@ -5,16 +5,11 @@ function shoppingCart() {
     var discount = 0;
 
     this.addProduct = function(productToPush){
-      if (productToPush.stock > 0){
           cart.push(productToPush)
-          productToPush.stock = productToPush.stock-1
           localStorage.setItem("productAdded", JSON.stringify(cart));
           const carto = localStorage.getItem("productAdded");
-          //console.log(JSON.parse(carto))
-          }
-        else {alert("No hay stock")}
-      }      
-
+    }
+    
     this.removeProduct = function(productToSplice) {
         var removeIndex = cart.findIndex(product => product.id === productToSplice.id);
         cart.splice(removeIndex, 1)
@@ -60,22 +55,39 @@ function btnFunction(event){
     cafeteria.forEach((product) => {
       if(product.id === event.target.dataset.id) {
         myShoppingCart.addProduct(product);
-        console.log(product.name, product.price);
+        console.log(product.name, product.price)
+        carritoCompras.innerHTML += buildCarrito(product);
       }
     });
     panaderia.forEach((product) => {
       if(product.id === event.target.dataset.id) {
         myShoppingCart.addProduct(product);
-        console.log(product.name, product.price);
+        console.log(product.name, product.price)
+        carritoCompras.innerHTML += buildCarrito(product);
       }
     });
     pasteleria.forEach((product) => {
       if(product.id === event.target.dataset.id) {
         myShoppingCart.addProduct(product);
-        console.log(product.name, product.price);
+        console.log(product.name, product.price)
+        carritoCompras.innerHTML += buildCarrito(product);
       }
     });
 
     console.log(myShoppingCart.getTotal())
-    
+  }
+
+  const carritoCompras = $("#carritoDeCompras")[0]
+
+  let ubicacionPrincipal = window.pageYOffset;
+  window.onscroll = function(){
+    let desplazamiento = window.pageYOffset;
+    if(ubicacionPrincipal >= desplazamiento){
+      document.getElementById("menuDeNavegacion").style.top = "0"
+    }
+    else{
+      document.getElementById("menuDeNavegacion").style.top = "-100px"
+    }
+
+    ubicacionPrincipal = desplazamiento;
   }
