@@ -57,3 +57,12 @@ $ ( document ).ready(function(){
 
     localStorage.getItem("total", myShoppingCart);
 });
+
+//ANIMACIONES CON JQUERY
+
+
+$(window).ready(function(){
+    $("h1").fadeOut(2000)
+    .fadeIn(3000)
+    .css("color","blue");
+     });
