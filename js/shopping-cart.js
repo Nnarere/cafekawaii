@@ -1,23 +1,34 @@
 /// CONSTRUCTOR DE CARRITO Y PRODUCTOS ///
 function shoppingCart() {     
-    var cart = [];
-    var total = 0;
-    var discount = 0;
+    this.cart = [];
+    this.total = 0;
+    this.discount = 0;
 
     this.addProduct = function(productToPush){
-          cart.push(productToPush)
-          localStorage.setItem("productAdded", JSON.stringify(cart));
+      if (this.cart.length > 0){
+        let index = this.cart.findIndex(
+          (element) => element.name === productToPush.name);
+        if (index === -1){
+          this.cart.push(productToPush);
+        }
+          else{
+            this.cart[index].amount = this.cart[index].amount +1;
+          }
+        } else{
+          this.cart.push(productToPush);
+        }
+          localStorage.setItem("productAdded", JSON.stringify(this.cart));
           const carto = localStorage.getItem("productAdded");
-    }
+    };
     
     this.removeProduct = function(productToSplice) {
-        var removeIndex = cart.findIndex(product => product.id === productToSplice.id);
-        cart.splice(removeIndex, 1)
+        var removeIndex = this.cart.findIndex(product => product.id === productToSplice.id);
+        this.cart.splice(removeIndex, 1)
         localStorage.setItem("productRemoved", "productNameRemoved")
     }
 
     this.getById = function(productToFind) {
-        cart.findIndex(function(product) {
+        this.cart.findIndex(function(product) {
             if(productToFind == product.name) {
                 console.log('Tenés descuento')
                 discount = 20;
@@ -26,23 +37,22 @@ function shoppingCart() {
     }
 
     this.getCartProductNames = function() {
-        cart.forEach(function(product) {
+        this.cart.forEach(function(product) {
             console.log(product.name);
         })
     }
 
     this.getCartUnitaryPrice = function() {
-        cart.forEach(function(product) {
+        this.cart.forEach(function(product) {
             console.log(product.price);
         })
     }
 
     this.getTotal = function() {
         let total=0;
-        cart.forEach(function(product) {
+        this.cart.forEach(function(product) {
             total += product.price
         })
-        total -= total * discount / 100
         console.log(`El total es ${total}`);
     }
 }
@@ -52,21 +62,21 @@ var myShoppingCart = new shoppingCart()
 //FUNCION DEL BOTON
 function btnFunction(event){
 
-    cafeteria.forEach((product) => {
+  myCafeteria.forEach((product) => {
       if(product.id === event.target.dataset.id) {
         myShoppingCart.addProduct(product);
         console.log(product.name, product.price)
         carritoCompras.innerHTML += buildCarrito(product);
       }
     });
-    panaderia.forEach((product) => {
+  myPanaderia.forEach((product) => {
       if(product.id === event.target.dataset.id) {
         myShoppingCart.addProduct(product);
         console.log(product.name, product.price)
         carritoCompras.innerHTML += buildCarrito(product);
       }
     });
-    pasteleria.forEach((product) => {
+  myPasteleria.forEach((product) => {
       if(product.id === event.target.dataset.id) {
         myShoppingCart.addProduct(product);
         console.log(product.name, product.price)
@@ -78,6 +88,8 @@ function btnFunction(event){
   }
 
   const carritoCompras = $("#carritoDeCompras")[0]
+
+  //NAVBAR
 
   let ubicacionPrincipal = window.pageYOffset;
   window.onscroll = function(){
