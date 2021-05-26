@@ -18,7 +18,7 @@ function shoppingCart() {
           this.cart.push(productToPush);
         }
           localStorage.setItem("productAdded", JSON.stringify(this.cart));
-          const carto = localStorage.getItem("productAdded");
+          JSON.parse(localStorage.getItem("productAdded"));
     };
     
     this.removeProduct = function(productToSplice) {
@@ -53,7 +53,7 @@ function shoppingCart() {
         this.cart.forEach(function(product) {
             total += product.price
         })
-        console.log(`El total es ${total}`);
+        console.log(`El total es ${this.total}`);
     }
 }
 
@@ -79,7 +79,7 @@ function btnFunction(event){
   myPasteleria.forEach((product) => {
       if(product.id === event.target.dataset.id) {
         myShoppingCart.addProduct(product);
-        console.log(product.name, product.price)
+        console.log(product.name, product.price, )
         carritoCompras.innerHTML += buildCarrito(product);
       }
     });

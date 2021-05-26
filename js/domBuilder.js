@@ -72,6 +72,7 @@ $ ( document ).ready(function(){
     localStorage.getItem("total", myShoppingCart);
 });
 
+
 //AJAX CON JQUERY
 
 const cafeteriaJSON = "json/productos-cafeteria.json"

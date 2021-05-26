@@ -5,7 +5,7 @@
     "description": "Café de grano 100% robusta",
     "price": 2000,
     "image":"images/cafeGrano.jpeg",
-    "amount":1,
+    "amount":10,
     "avaliable":true
 },{
     "id": "caf002",
